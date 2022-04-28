@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Spotify</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="shortcut icon" type="img/png" href="img/logo.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<!--header-->
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__logo">
+						<img class="header__icon" src="img/logo.png" alt="logo">
+						<a class="header__title" href="index.html">Spotify</a>
+					</div>
+					<div class="header__profile">
+						<a class="header__profile__title" href="#">expirex</a>
+						<img class="header__profile__icon" src="img/profile/icon.png" alt="profile">
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/header-->
+
+		<!--main-->
+		<div class="main">
+			<div class="container">
+				<div class="main__inner">
+
+					<!--main__sidebar-->
+					<div class="main__sidebar">
+						<h3 class="main__sidebar__title">Меню</h3>
+						<div class="main__sidebar__nav">
+							<a class="main__sidebar__item" href="#home" id="home">Главная</a>
+							<a class="main__sidebar__item" href="#search" id="search">Поиск</a>
+							<a class="main__sidebar__item" href="#">Понравившееся</a>
+						</div>
+						<h3 class="main__sidebar__title">Плейлисты</h3>
+						<div class="main__sidebar__nav">
+							<a class="main__sidebar__item" href="#">Любимые</a>
+							<a class="main__sidebar__item" href="#">На каждый день</a>
+							<a class="main__sidebar__item" href="#">Geoxor</a>
+						</div>
+					</div>
+					<!--/main__sidebar-->
+					<!--content-->
+					<div class="content">
+						<div class="content__inner">
+							
+							<!--home-->
+							<div class="home show">
+								<div class="home__inner">
+									<h2 class="home__title">Главная</h2>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/01.png" alt="cover">
+										<a class="home__item__title" href="#" id="playBlusk">Blusk</a>
+										<a class="home__item__autor" href="#">Geoxor</a>
+									</div>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/02.png" alt="cover">
+										<a class="home__item__title" href="#" id="playNana">Nana</a>
+										<a class="home__item__autor" href="#">Geoxor</a>
+									</div>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/03.png" alt="cover">
+										<a class="home__item__title" href="#" id="playDead">Dead</a>
+										<a class="home__item__autor" href="#">Geoxor & SVRGE</a>
+									</div>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/04.png" alt="cover">
+										<a class="home__item__title" href="#" id="playEuphoria">Euphoria</a>
+										<a class="home__item__autor" href="#">Geoxor</a>
+									</div>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/06.png" alt="cover">
+										<a class="home__item__title" href="#" id="playEternal">Eternal</a>
+										<a class="home__item__autor" href="#">SVRGE</a>
+									</div>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/none.png" alt="cover">
+										<a class="home__item__title" href="#">Demisaur</a>
+										<a class="home__item__autor" href="#">Excision</a>
+									</div>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/05.png" alt="cover">
+										<a class="home__item__title" href="#" id="playHappiness">Happiness</a>
+										<a class="home__item__autor" href="#">expirex</a>
+									</div>
+
+									<div class="home__item">
+										<img class="home__item__cover" src="img/cover/none.png" alt="cover">
+										<a class="home__item__title" href="#">Colors</a>
+										<a class="home__item__autor" href="#">Amidst</a>
+									</div>
+
+								</div>
+							</div>
+							<!--/home-->
+
+							<!--search-->
+							<div class="search">
+								<div class="search__inner">
+									<h2 class="search__title">Поиск</h2>
+									<div class="search__item">
+										<input class="search__item__input" type="text" name="search" placeholder="Введите название трека или автора">
+										<a class="search__item__btn" href="#">
+											<img class="search__item__btn__img" src="img/search.png" alt="search">
+										</a>
+									</div>
+								</div>
+							</div>
+							<!--/search-->
+
+						</div>
+					</div>
+					<!--/content-->
+
+					<!--player-->
+					<div class="player">
+						<div class="player__inner">
+							<div class="player__controls">
+								<div class="player__controls__btn">
+									<img class="player__controls__img" src="img/player/prev.png" alt="prev">
+								</div>
+								<div class="player__controls__btn" id="play">
+									<img class="player__controls__img" src="img/player/play.png" alt="play">
+								</div>
+								<div class="player__controls__btn">
+									<img class="player__controls__img" src="img/player/next.png" alt="next">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/player-->
+
+				</div>
+			</div>
+		</div>
+
+		<div class="nowplay">
+			<h2 class="nowplay__text">Сейчас играет:</h2>
+			<div class="nowplay__inner">
+				<img class="nowplay__img" src="img/cover/01.png" alt="cover">
+				<div class="nowplay__desc">
+					<h3 class="nowplay__desc__title">Blusk</h3>
+					<p class="nowplay__desc__autor">Geoxor</p>
+				</div>
+			</div>
+		</div>
+		<!--/main-->
+		<audio class="music" src="music/blusk.mp3"></audio>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
