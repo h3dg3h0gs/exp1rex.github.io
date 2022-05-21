@@ -7,7 +7,8 @@
 body {
 	background: linear-gradient(40deg, #a7ef6e, #0de3ac);
 	min-height: 100vh;
-	height: 1020px;
+	max-height: 1320px;
+	height: 100%;
 }
 
 a {
@@ -393,12 +394,13 @@ a {
 	position: fixed;
 	display: flex;
 	align-items: center;
-	right: -500px;
+	right: -600px;
 	bottom: 20px;
 	background-color: #fff;
 	border-radius: 10px;
 	padding: 10px;
 	animation: none;
+	opacity: 0;
 }
 
 .nowplay__text {
@@ -576,10 +578,10 @@ a {
 }
 
 @keyframes nowplay {
-	0% {right: -500px; opacity: 0;}
+	0% {right: -600px; opacity: 0;}
 	30% {right: 20px; opacity: 1;}
 	70% {right: 20px; opacity: 1;}
-	100% {right: -500px; opacity: 0;}
+	100% {right: -600px; opacity: 0;}
 }
 
 
@@ -588,7 +590,8 @@ a {
 
 @media(max-width: 1100px) {
 	body {
-		height: 1730px;
+		height: 100%;
+		max-height: 1980px;
 	}
 
 	.main__inner {
@@ -641,7 +644,7 @@ a {
 
 @media(max-width: 590px) {
 	body {
-		height: 1980px;
+		height: 2280px;
 	}
 
 	.main__inner {
@@ -667,12 +670,13 @@ a {
 
 	.home__item {
 		width: 44%;
+		font-size: 14px;
 	}
 
 	.home__item__cover {
 		min-height: 138px;
-		max-height: 218px;
-		height: 80%;
+		max-height: 138px;
+		height: 100%;
 	}
 
 	.player {
