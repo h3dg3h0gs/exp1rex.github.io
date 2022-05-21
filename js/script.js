@@ -47,11 +47,13 @@ document.querySelectorAll('#playHappiness')[1].onclick = playHappiness;
 document.querySelector('#playDemisaur').onclick = playDemisaur;
 document.querySelector('#playColor').onclick = playColor;
 document.querySelector('#playHappyPlace').onclick = playHappyPlace;
-document.querySelector('#playSharkAttack').onclick = playSharkAttack;
+//document.querySelector('#playSharkAttack').onclick = playSharkAttack;
 document.querySelectorAll('#playDYSTOPIA99')[0].onclick = playDYSTOPIA99;
 document.querySelectorAll('#playDYSTOPIA99')[1].onclick = playDYSTOPIA99;
 document.querySelectorAll('#playNeonEyes')[0].onclick = playNeonEyes;
 document.querySelectorAll('#playNeonEyes')[1].onclick = playNeonEyes;
+document.querySelectorAll('#playJourneytoWindrise')[0].onclick = playJourneytoWindrise;
+document.querySelectorAll('#playJourneytoWindrise')[1].onclick = playJourneytoWindrise;
 
 let currentSongCount = 0;
 
@@ -225,6 +227,16 @@ function playNeonEyes() {
 	play();
 }
 
+function playJourneytoWindrise() {
+	nowplay__img.src = 'img/cover/13.png';
+	nowplay__desc__title.innerText = 'Journey to Windrise (feat. aadajuulia)';
+	nowplay__desc__autor.innerText = 'DraGonis';
+	music.src = 'music/journeytowindrise.mp3';
+	currentSongCount = 12;
+	play0rPause = 0;
+	play();
+}
+
 /*
 function prev() {
 	currentSongCount--;
@@ -301,7 +313,11 @@ function progressUpdate() {
 			play();
 			playNeonEyes();
 		}
-		else if (currentSongCount > 11) {
+		else if (currentSongCount == 12) {
+			play();
+			playJourneytoWindrise();
+		}
+		else if (currentSongCount > 12) {
 			currentSongCount = 0;
 			play();
 			playBlusk();
